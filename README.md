@@ -1,4 +1,11 @@
 # CODTECH-task1
+Name:PARTHEEBAN R
+Company:CODTECH IT SOLUTIONS
+ID:CTO8DS161
+Domain:CYBER SECURITY & ETHICAL HACKING
+Duration:june to july
+Mentor:SRAVANI GOUNI
+
 # Password Strength Checker
 
 This is a simple password strength checker implemented with HTML, CSS, and JavaScript. The application evaluates the strength of a password based on criteria such as length, presence of numbers, uppercase and lowercase letters, and special characters.
