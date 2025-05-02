@@ -1,127 +1,69 @@
-# CODTECH-task1
+# Password Strength Checker (Tkinter GUI)
 
-### Name:PARTHEEBAN R
+### Name: PARTHEEBAN R
 
-### Company:CODTECH IT SOLUTIONS
+This is a simple password strength checker built using **Python's Tkinter library**. The GUI-based application evaluates the strength of a password based on length, use of uppercase and lowercase letters, digits, and special characters. It gives **real-time color-coded feedback** to indicate whether the password is weak, medium, or strong.
 
-### ID:CTO8DS161
+## 🧰 Features
 
-### Domain:CYBER SECURITY & ETHICAL HACKING
+- Interactive GUI using Tkinter
+- Real-time password strength feedback
+- Color-coded strength indicators (Red, Orange, Green)
+- Basic password policy validation
 
-### Duration:june to july
+## 🖥️ Technologies Used
 
-### Mentor:SRAVANI GOUNI
+- Python
+- Tkinter (Standard Python GUI library)
 
-# Password Strength Checker
-
-This is a simple password strength checker implemented with HTML, CSS, and JavaScript. The application evaluates the strength of a password based on criteria such as length, presence of numbers, uppercase and lowercase letters, and special characters.
-
-## Features
-
-- Real-time password strength evaluation
-- Visual feedback with different colors indicating password strength
-- Easy to integrate and customize
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
-To run this project, you only need a web browser.
+- Python installed (version 3.6+ recommended)
 
-### Installation
+### Installation & Usage
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/password-strength-checker.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd password-strength-checker
-    ```
+   ```bash
+   git clone https://github.com/your-username/tkinter-password-checker.git
+   cd tkinter-password-checker
 
-### Usage
 
-1. Open the `index.html` file in your web browser.
-2. Enter a password in the input field to see the strength evaluation in real-time.
+2.Run the Python script:
 
-## Code Overview
+    python password_checker.py
 
-### HTML
 
-The HTML structure consists of a container with an input field for the password and a paragraph for displaying the password strength.
+3.The GUI window will open. Enter a password and click "Check Strength" to see the feedback.
 
-```html
-'<div class="container">
-    <h1>Password Strength Checker</h1>
-    <input type="password" id="password" placeholder="Enter password" oninput="checkPasswordStrength()">
-    <p class="strength" id="strength"></p>
-</div>'
- ```
-# CSS
+# 🔍 Code Overview
 
-The CSS styles the container and the strength indicator. Different classes are used to indicate weak, medium, and strong passwords.
+## Password Strength Logic
 
-```css
-.strength.weak {
-    color: red;
-}
+1 point: Password length is at least 8 characters
 
-.strength.medium {
-    color: orange;
-}
+1 point: Contains lowercase letters
 
-.strength.strong {
-    color: green;
-}
-```
+1 point: Contains uppercase letters
 
-# javaScript
+1 point: Contains digits
 
-The JavaScript function checkPasswordStrength evaluates the strength of the password based on the following criteria:
+1 point: Contains special characters
 
-Length of at least 8 characters
-Contains lowercase letters
-Contains uppercase letters
-Contains numbers
-Contains special characters
-The strength is updated based on these criteria.
+The total score is used to determine:
 
-```javascript
-function checkPasswordStrength() {
-    const password = document.getElementById('password').value;
-    const strengthText = document.getElementById('strength');
-    let strength = 0;
+0–2 points: Weak (🔴 Red)
 
-    if (password.length >= 8) strength++;
-    if (password.match(/[a-z]/)) strength++;
-    if (password.match(/[A-Z]/)) strength++;
-    if (password.match(/[0-9]/)) strength++;
-    if (password.match(/[\W_]/)) strength++;
+3–4 points: Medium (🟠 Orange)
 
-    if (strength === 0) {
-        strengthText.textContent = '';
-    } else if (strength < 3) {
-        strengthText.textContent = 'Weak';
-        strengthText.className = 'strength weak';
-    } else if (strength < 5) {
-        strengthText.textContent = 'Medium';
-        strengthText.className = 'strength medium';
-    } else {
-        strengthText.textContent = 'Strong';
-        strengthText.className = 'strength strong';
-    }
-}
-```
+5 points: Strong (🟢 Green)
 
-## Contributing
+# 📸 GUI Screenshot
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+![Screenshot 2025-05-02 131426](https://github.com/user-attachments/assets/c2bf5b3f-b644-462e-b63b-5f2415d651f8)
 
-## Acknowledgments
+# Inspired by common password security guidelines
 
-Inspired by various password strength checking tools and tutorials available online.
-
-# OUTPUT SCREENSHOT
-
-![image](https://github.com/Partheeban37/CODTECH-task1/assets/144414138/97346a6f-6af2-4897-a5d5-a799d1bd7f36)
+# Built as a practice project using Python GUI programming
 
