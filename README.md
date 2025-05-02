@@ -1,22 +1,22 @@
-# Password Strength Checker (Tkinter GUI)
+# Password Strength Checker 
 
 ### Name: PARTHEEBAN R
 
 This is a simple password strength checker built using **Python's Tkinter library**. The GUI-based application evaluates the strength of a password based on length, use of uppercase and lowercase letters, digits, and special characters. It gives **real-time color-coded feedback** to indicate whether the password is weak, medium, or strong.
 
-## 🧰 Features
+##  Features
 
 - Interactive GUI using Tkinter
 - Real-time password strength feedback
 - Color-coded strength indicators (Red, Orange, Green)
 - Basic password policy validation
 
-## 🖥️ Technologies Used
+##  Technologies Used
 
 - Python
 - Tkinter (Standard Python GUI library)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -37,7 +37,7 @@ This is a simple password strength checker built using **Python's Tkinter librar
 
 3.The GUI window will open. Enter a password and click "Check Strength" to see the feedback.
 
-# 🔍 Code Overview
+#  Code Overview
 
 ## Password Strength Logic
 
@@ -59,7 +59,7 @@ The total score is used to determine:
 
 5 points: Strong (🟢 Green)
 
-# 📸 GUI Screenshot
+#  GUI Screenshot
 
 ![Screenshot 2025-05-02 131426](https://github.com/user-attachments/assets/c2bf5b3f-b644-462e-b63b-5f2415d651f8)
 
